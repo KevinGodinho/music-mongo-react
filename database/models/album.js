@@ -1,6 +1,4 @@
-// Todo: create Album Schema
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
 const AlbumSchema = new Schema({
@@ -12,6 +10,4 @@ const AlbumSchema = new Schema({
   revenue: Number
 });
 
-const Album = mongoose.model("artist", AlbumSchema);
-
-module.exports = Album;
+module.exports = AlbumSchema;
